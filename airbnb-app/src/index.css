@@ -5,6 +5,7 @@
   background-color: white;
   color: black;
 }
+
 p{
   margin: 0;
 }
@@ -13,7 +14,7 @@ p{
   box-sizing: border-box;
 }
 .navbar{
-  max-width: 550px;
+  width: 550px;
   height: 70px;
   box-shadow: 0 2px 7px rgba(0,0,0,0.1);
 }
@@ -63,11 +64,12 @@ p{
   margin-right: 4px;
 }
 .card-container{
+  
   padding-left: 36px;
   padding-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   column-gap: 15px;
   max-width: 550px;
 }
