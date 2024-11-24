@@ -1,45 +1,17 @@
-export default function Card() {
+export default function Card(props) {
   return(
-    <div className="card-container">
       <div className="cards">
         <div className="card-image-container">
-          <img className="card-image" src="im12.png"/>
-          <div className="online">SOLD OUT</div>
+          <img className="card-image" src={props.image}/>
+          <div className="online">{props.online}</div>
         </div>
         <div className="rating">
           <img className="star" src="Star 1.png"/>
-          <p>5.0<span className="number">(6)&#183;USA</span></p>
+          <p>{props.rating}<span className="number">({props.reviews})&#183;USA</span></p>
         </div>
-        <p className="card-info">Life lessons with Katie Zaferes</p>
-        <p><bold className="bold">From $136</bold>/ person</p>
+        <p className="card-info">{props.cardInfo}</p>
+        <p><span className="bold">From ${props.price}</span>/ person</p>
       </div>
-      
-      <div className="cards">
-        <div className="card-image-container">
-          <img className="card-image" src="im12.png"/>
-          <div className="online">SOLD OUT</div>
-        </div>
-        <div className="rating">
-          <img className="star" src="Star 1.png"/>
-          <p>5.0<span className="number">(6)&#183;USA</span></p>
-        </div>
-        <p className="card-info">Life lessons with Katie Zaferes</p>
-        <p><span className="bold">From $136</span>/ person</p>
-      </div>
-      
-      <div className="cards">
-        <div className="card-image-container">
-          <img className="card-image" src="im12.png"/>
-          <div className="online">SOLD OUT</div>
-        </div>
-        <div className="rating">
-          <img className="star" src="Star 1.png"/>
-          <p>5.0<span className="number">(6)&#183;USA</span></p>
-        </div>
-        <p className="card-info">Life lessons with Katie Zaferes</p>
-        <p><span className="bold">From $136</span>/ person</p>
-      </div>
-      
-    </div>
+    
   )
 }

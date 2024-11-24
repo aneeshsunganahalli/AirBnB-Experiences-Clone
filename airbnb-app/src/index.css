@@ -63,16 +63,7 @@ p{
   height:14px;
   margin-right: 4px;
 }
-.card-container{
-  
-  padding-left: 36px;
-  padding-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  column-gap: 15px;
-  max-width: 550px;
-}
+
 .cards{
   font-size: 12px;
   line-height: 20px;
